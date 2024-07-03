@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(0,123,255,0.2), rgba(255,255,255,0.2));
+    color: #333;
+}
+
+header, footer {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin: 1em 2em;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+header h1, footer p {
+    margin: 0;
+    color: #007BFF;
+}
+
+main {
+    flex: 1;
+    padding: 2em;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    margin: 1em 0;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+h1, h2 {
+    margin-bottom: 1em;
+    transition: color 0.3s ease;
+    color: #007BFF;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    margin: 0.5em 0;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+li img {
+    margin-right: 1em;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+li:hover img {
+    transform: scale(1.1);
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0.5em;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    li {
+        padding: 0.5em;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    li img {
+        margin-right: 0;
+        margin-bottom: 0.5em;
+    }
+}
