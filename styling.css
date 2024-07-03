@@ -112,9 +112,4 @@ p {
         flex-direction: column;
         text-align: center;
     }
-
-    li img {
-        margin-right: 0;
-        margin-bottom: 0.5em;
-    }
 }
